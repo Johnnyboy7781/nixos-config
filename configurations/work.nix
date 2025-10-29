@@ -35,7 +35,7 @@
   };
 
   security.pki.certificateFiles = [
-    ../cacerts/trusted.kmi.lan.pem
+    "path:/home/nixos/nixos-conig/cacerts/trusted.kmi.lan.pem"
   ];
 
   # This value determines the NixOS release from which the default
