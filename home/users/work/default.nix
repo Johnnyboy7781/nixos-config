@@ -38,6 +38,13 @@
     userName = "Jonathan McDonnell";
     userEmail = "jonathan.mcdonnell@kinsaleins.com";
   };
+
+  programs.gh = {
+    enable = true;
+    settings = {
+      editor = "nvim";
+    };
+  };
   
   home.stateVersion = "25.05";
 }
