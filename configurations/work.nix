@@ -8,15 +8,14 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    ./programs/nvim
+  ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   wsl.enable = true;
   wsl.defaultUser = "nixos";
-
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
 
   environment.systemPackages = with pkgs; [
     git
