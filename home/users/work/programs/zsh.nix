@@ -7,7 +7,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "npm" "mvn" "ng" "node" ];
-      theme = "imajes";
+      theme = "af-magic";
     };
 
     profileExtra = ''

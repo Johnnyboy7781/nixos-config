@@ -34,9 +34,9 @@
     shell = pkgs.zsh;
   };
 
-#  security.pki.certificateFiles = [
-#    "path:/home/nixos/nixos-conig/cacerts/trusted.kmi.lan.pem"
-#  ];
+  security.pki.certificates = [
+    (builtins.readFile /home/nixos/cacerts/trusted.kmi.lan.pem)
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
