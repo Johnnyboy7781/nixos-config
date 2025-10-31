@@ -1,7 +1,7 @@
 { conig, pkgs, ... }:
 {
   imports = [
-  	./programs/zsh.nix
+  	./programs/zsh/zsh.nix
   ];
 
   home.username = "nixos";
