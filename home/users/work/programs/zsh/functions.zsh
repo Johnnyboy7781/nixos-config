@@ -36,4 +36,6 @@ rebuild() {
   if [[ -z $proceedWithoutChanges ]]; then
     git push
   fi
+
+  src
 }
