@@ -39,6 +39,7 @@ rebuild() {
     }
   fi
 
+  # Impure due to absolute path for cacert
   sudo nixos-rebuild switch --impure
 
   if [[ $status != 0 ]]; then
