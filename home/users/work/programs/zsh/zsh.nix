@@ -8,6 +8,7 @@
     shellAliases = {
       c = "clear";
       src = "source ~/.zshrc";
+      s = "git status"
     };
 
     oh-my-zsh = {
