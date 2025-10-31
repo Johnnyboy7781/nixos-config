@@ -22,7 +22,8 @@ rebuild() {
 
   if [[ -z $proceedWithoutChanges ]]; then
     git add .
-    read "?Commit message: " | git commit -m $commitMsg
+    read "?Commit message: " commitMsg
+    git commit -m $commitMsg
   fi
 
   # Impure due to absolute path for cacert
@@ -36,6 +37,4 @@ rebuild() {
   if [[ -z $proceedWithoutChanges ]]; then
     git push
   fi
-
-  source ~/.zshrc
 }
