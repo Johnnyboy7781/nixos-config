@@ -37,5 +37,5 @@ rebuild() {
     git push
   fi
 
-  src
+  source ~/.zshrc
 }
