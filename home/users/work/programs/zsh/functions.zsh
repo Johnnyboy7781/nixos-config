@@ -8,13 +8,14 @@ rebuild() {
   changes=$(git status -s)
 
   if [[ -z $changes ]]; then
-    read -q "proceedWithoutChanges?No changes to apply, continue (y/N)"
+    read -q "proceedWithoutChanges?No changes to apply, continue? (y/N)"
 
     if [[ -z $proceedWithoutChanges ]]; then
       proceedWithoutChanges="n"
     fi
 
     if [[ ${(L)proceedWithoutChanges} == "n" ]]; then
+      echo "Aborting rebuild"
       return 1
     fi
   fi
