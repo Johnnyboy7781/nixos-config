@@ -2,25 +2,27 @@
 rebuild() {
   cd ~/nixos-config
 
+  proceedWithoutChanges=""
+
   # Check if there are any changes to the config
   changes=$(git status -s)
 
   if [[ -z $changes ]]; then
-    read "proceed-without-changes?No changes to apply, continue? (y/N)"
+    read -q "proceedWithoutChanges?No changes to apply, continue (y/N)"
 
-    if [[ -z $proceed-without-changes ]]; then
-      proceed-without-changes="n"
+    if [[ -z $proceedWithoutChanges ]]; then
+      proceedWithoutChanges="n"
     fi
 
-    if [[ ${(L)proceed-without-changes} == "n" ]]; then
+    if [[ ${(L)proceedWithoutChanges} == "n" ]]; then
       return 1
     fi
   fi
 
-  if [[ -z $proceed-without-changes ]]; then
+  if [[ -z $proceedWithoutChanges ]]; then
     git add .
-    read "?Commit message: " commit-msg
-    git commit -m $commit-msg
+    read "?Commit message: " commitMsg
+    git commit -m $commitMsg
   fi
 
   sudo nixos-rebuild switch --impure
@@ -30,7 +32,7 @@ rebuild() {
     return 1
   fi
 
-  if [[ -z $proceed-without-changes ]]; then
+  if [[ -z $proceedWithoutChanges ]]; then
     git push
   fi
 }
