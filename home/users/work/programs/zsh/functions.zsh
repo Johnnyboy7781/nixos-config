@@ -22,7 +22,7 @@ rebuild() {
 
   if [[ -z $proceedWithoutChanges ]]; then
     {
-      git add .
+      git ad .
       read "?Commit message: " | git commit -m $commitMsg
     } || {
       # catch git errors
