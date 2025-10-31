@@ -21,9 +21,22 @@ rebuild() {
   fi
 
   if [[ -z $proceedWithoutChanges ]]; then
-    git add .
-    read "?Commit message: " commitMsg
-    git commit -m $commitMsg
+    {
+      git add .
+      read "?Commit message: " | git commit -m $commitMsg
+    } || {
+      # catch git errors
+      read -q "proceedWithoutChanges?Git is having trouble, proceed with rebuild anyway? (y/N)"
+
+      if [[ -z $proceedWithoutChanges ]]; then
+	proceedWithoutChanges="n"
+      fi
+
+      if [[ ${(L)proceedWithoutChanges} == "n" ]]; then
+	echo "Aborting rebuild"
+	return 1
+      fi
+    }
   fi
 
   sudo nixos-rebuild switch --impure
