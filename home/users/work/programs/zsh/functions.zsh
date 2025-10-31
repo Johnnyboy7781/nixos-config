@@ -6,7 +6,7 @@ rebuild() {
   changes=$(git status -s)
   if [[ -z $changes ]]; then
     echo "No changes to apply, aborting rebuild"
-    exit 1
+    return 1
   fi
 
   git add .
@@ -17,7 +17,7 @@ rebuild() {
 
   if [[ $status != 0 ]]; then
     echo "Rebuild failed, skipping push"
-    exit 1
+    return 1
   fi
 
   echo "Rebuild successful, pushing changes"
