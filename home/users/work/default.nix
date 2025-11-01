@@ -2,6 +2,7 @@
 {
   imports = [
   	./programs/zsh/zsh.nix
+	./programs/nvim
   ];
 
   home.username = "nixos";
