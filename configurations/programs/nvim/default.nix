@@ -4,7 +4,7 @@
     enable = true;
     defaultEditor = true;
 
-    extraLuaConfig = ''
+    customRC = ''
       ${builtins.readFile ./set.lua}
     '';
   };
