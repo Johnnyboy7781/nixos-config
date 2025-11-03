@@ -1,7 +1,7 @@
 { conig, pkgs, ... }:
 {
   imports = [
-  	./programs/zsh/zsh.nix
+  	./programs/zsh
 	./programs/nvim
   ];
 

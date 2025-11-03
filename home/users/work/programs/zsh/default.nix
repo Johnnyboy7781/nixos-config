@@ -9,6 +9,7 @@
       c = "clear";
       src = "source ~/.zshrc";
       s = "git status";
+      z = "zellij";
     };
 
     oh-my-zsh = {
