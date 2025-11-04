@@ -5,7 +5,7 @@
     defaultEditor = true;
 
     extraLuaConfig = ''
-      ${builtins.readFile ./set.lua}
+      ${builtins.readFile ./init.lua}
     '';
   };
 }
