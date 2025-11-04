@@ -48,3 +48,7 @@ mkd() {
     mkdir -p -- "$1" && cd -P -- "$1"
 }
 
+# print PATHs
+path() {
+    echo $PATH | tr ':' '\n'
+}
