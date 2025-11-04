@@ -1,5 +1,7 @@
 # System rebuild
 rebuild() {
+  originalDir=$(pwd)
+
   cd ~/nixos-config
 
   proceedWithoutChanges=""
@@ -37,4 +39,6 @@ rebuild() {
   if [[ -z $proceedWithoutChanges ]]; then
     git push
   fi
+
+  cd $originalDir
 }
