@@ -31,7 +31,7 @@
 	    home-manager.users.nixos = import ./home/users/work;
 	  }
 	  {
-	    nixpgks.overlays = overlays;
+	    nixpkgs.overlays = overlays;
 	  }
 	];
       };
