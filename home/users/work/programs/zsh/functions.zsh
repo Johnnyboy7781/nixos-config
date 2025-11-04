@@ -42,3 +42,9 @@ rebuild() {
 
   cd $originalDir
 }
+
+# Make directory and cd into it
+mkd() {
+    mkdir -p -- "$1" && cd -P -- "$1"
+}
+
