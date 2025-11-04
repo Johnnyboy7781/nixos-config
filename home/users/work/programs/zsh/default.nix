@@ -10,6 +10,7 @@
       src = "source ~/.zshrc";
       s = "git status";
       z = "zellij";
+      ls = "eza";
     };
 
     oh-my-zsh = {
