@@ -25,7 +25,7 @@ rebuild() {
   if [[ -z $proceedWithoutChanges ]]; then
     git add .
     read "?Commit message: " commitMsg
-    git commit -m $commitMsg
+    git commit -m ${(L)commitMsg}
   fi
 
   # Impure due to absolute path for cacert
