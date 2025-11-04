@@ -12,11 +12,11 @@
   };
 
   outputs = { self, nixpkgs, nixos-wsl, home-manager, ... }@inputs: 
-  let
+# let
 #    overlays = [
 #      inputs.neovim-nightly-overlay.overlays.default
 #   ];
-  in
+# in
   {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
