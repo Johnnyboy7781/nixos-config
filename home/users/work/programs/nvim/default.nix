@@ -5,7 +5,7 @@
     defaultEditor = true;
 
     extraPackages = with pkgs; [
-	lua-language-server,
+	lua-language-server
     nil_ls
     ];
 
