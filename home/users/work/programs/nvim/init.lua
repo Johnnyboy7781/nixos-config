@@ -6,6 +6,7 @@ vim.o.softtabstop = 4
 vim.o.expandtab = true
 vim.o.scrolloff = 20
 vim.o.signcolumn = "yes"
+vim.o.winborder = "rounded"
 vim.g.mapleader = " "
 
 vim.pack.add({
