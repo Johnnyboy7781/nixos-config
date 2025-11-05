@@ -29,6 +29,10 @@
         shell = pkgs.zsh;
     };
 
+    fonts.packages = with pkgs; [
+        nerd-fonts.fira-code
+    ];
+
     security.pki.certificates = [
         (builtins.readFile /home/nixos/cacerts/trusted.kmi.lan.pem)
     ];
