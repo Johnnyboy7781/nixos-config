@@ -30,8 +30,7 @@
     };
 
     fonts.packages = with pkgs; [
-        nerd-fonts.fira-code
-        nerd-fonts.fira-code-symbols
+        nerd-fonts.cultive-mono
     ];
 
     security.pki.certificates = [
