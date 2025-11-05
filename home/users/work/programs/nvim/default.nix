@@ -6,7 +6,7 @@
 
     extraPackages = with pkgs; [
 	lua-language-server
-    nil_ls
+    nil
     ];
 
     extraLuaConfig = ''
