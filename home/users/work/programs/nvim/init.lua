@@ -13,12 +13,14 @@ vim.g.mapleader = " "
 vim.pack.add({
     { src = "https://github.com/echasnovski/mini.pick" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
-    { src = "https://github.com/vague2k/vague.nvim" }
+    { src = "https://github.com/vague2k/vague.nvim" },
+    { src = "https://github.com/nvim-lualine/lualine.nvim" }
 })
 
 vim.cmd("colorscheme vague")
 
 require "mini.pick".setup()
+require "lualine".setup()
 
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
