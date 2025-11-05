@@ -30,7 +30,7 @@
     };
 
     fonts.packages = with pkgs; [
-        nerd-fonts.monoflow
+        nerd-fonts.3270
     ];
 
     security.pki.certificates = [
