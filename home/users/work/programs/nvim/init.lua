@@ -7,6 +7,7 @@ vim.o.expandtab = true
 vim.o.scrolloff = 20
 vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
+vim.o.termguicolors = true
 vim.g.mapleader = " "
 
 vim.pack.add({
