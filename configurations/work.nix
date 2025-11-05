@@ -32,6 +32,9 @@
     fonts.packages = with pkgs; [
         nerd-fonts._3270
     ];
+    fonts.fontconfig.defaultFonts.serif = [
+        "3270"
+    ];
 
     security.pki.certificates = [
         (builtins.readFile /home/nixos/cacerts/trusted.kmi.lan.pem)
