@@ -4,7 +4,13 @@ vim.o.shiftwidth = 4
 vim.o.scrolloff = 20
 
 vim.pack.add({
-    { src = "https://github.com/echasnovski/mini.pick" }
+    { src = "https://github.com/echasnovski/mini.pick" },
+    { src = "https://github.com/neovim/nvim-lspconfig" }
 })
 
 require "mini.pick".setup()
+
+vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+
+vim.lsp.enable({ 'lua_ls' })
