@@ -1,4 +1,4 @@
-{ conig, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
   	./programs/zsh
