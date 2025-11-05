@@ -14,4 +14,5 @@ require "mini.pick".setup()
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 
-vim.lsp.enable({ 'lua_ls' })
+vim.lsp.enable({ "lua_ls" })
+
