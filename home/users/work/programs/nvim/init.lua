@@ -36,7 +36,10 @@ require "vague".setup({
 })
 vim.cmd("colorscheme vague")
 
-require "nvim-treesitter".setup()
+require "nvim-treesitter".setup({
+    ensure_installed = { "markdown", "markdown_inline" }
+})
+
 require "mini.pick".setup()
 require "mini.comment".setup()
 require "lualine".setup()
