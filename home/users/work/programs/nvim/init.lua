@@ -4,7 +4,7 @@ vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.expandtab = true
-vim.o.scrolloff = 20
+vim.o.scrolloff = 10
 vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
 vim.o.termguicolors = true
@@ -35,7 +35,7 @@ vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
 vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 
-vim.lsp.enable({ 
+vim.lsp.enable({
     "lua_ls",
     "nil_ls",
     "angularls",
