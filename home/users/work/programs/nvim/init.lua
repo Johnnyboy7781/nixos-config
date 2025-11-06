@@ -19,7 +19,8 @@ vim.pack.add({
     { src = "https://github.com/nvim-mini/mini.files" },
     { src = "https://github.com/karb94/neoscroll.nvim" },
     { src = "https://github.com/windwp/nvim-autopairs" },
-    { src = "https://github.com/lewis6991/gitsigns.nvim" }
+    { src = "https://github.com/lewis6991/gitsigns.nvim" },
+    { src = "https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-comment.md" }
 })
 
 require "vague".setup({
@@ -28,6 +29,7 @@ require "vague".setup({
 vim.cmd("colorscheme vague")
 
 require "mini.pick".setup()
+require "mini.comment".setup()
 require "lualine".setup()
 require "mini.files".setup()
 require "neoscroll".setup()
