@@ -32,4 +32,12 @@ vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
 vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 
-vim.lsp.enable({ "lua_ls", "nil_ls" })
+vim.lsp.enable({ 
+    "lua_ls",
+    "nil_ls",
+    "angularls",
+    "cssmodules_ls",
+    "dockerls",
+    "java_language_server",
+    "eslint"
+})
