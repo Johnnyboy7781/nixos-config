@@ -49,6 +49,8 @@
 
   programs.zellij = {
       enableZshIntegration = true;
+      extraConfig = ''
+      '';
   };
   
   home.stateVersion = "25.05";
