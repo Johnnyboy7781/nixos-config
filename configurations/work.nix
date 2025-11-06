@@ -34,7 +34,7 @@
         enableZshIntegration = true;
         extraConfig = ''
             pane_frames false
-        ''
+        '';
     };
 
     security.pki.certificates = [
