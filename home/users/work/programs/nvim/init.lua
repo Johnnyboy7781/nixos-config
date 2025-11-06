@@ -20,7 +20,7 @@ vim.pack.add({
     { src = "https://github.com/karb94/neoscroll.nvim" },
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
-    { src = "https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-comment.md" }
+    { src = "https://github.com/nvim-mini/mini.comment" }
 })
 
 require "vague".setup({
