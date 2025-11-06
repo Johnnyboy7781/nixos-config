@@ -49,6 +49,7 @@
 
   programs.zellij = {
       enableZshIntegration = true;
+      settings = {};
       extraConfig = ''
       '';
   };
