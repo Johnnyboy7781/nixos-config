@@ -22,7 +22,7 @@ vim.pack.add({
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
     { src = "https://github.com/nvim-mini/mini.comment" },
     {
-        src = "https://github.com/nvim-treesitter/nvim-treesitter/tree/main",
+        src = "https://github.com/nvim-treesitter/nvim-treesitter",
         data = {
             lazy = false,
             branch = "main",
