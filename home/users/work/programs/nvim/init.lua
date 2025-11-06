@@ -18,7 +18,8 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/nvim-mini/mini.files" },
     { src = "https://github.com/karb94/neoscroll.nvim" },
-    { src = "https://github.com/windwp/nvim-autopairs" }
+    { src = "https://github.com/windwp/nvim-autopairs" },
+    { src = "https://github.com/lewis6991/gitsigns.nvim" }
 })
 
 require "vague".setup({
@@ -31,6 +32,7 @@ require "lualine".setup()
 require "mini.files".setup()
 require "neoscroll".setup()
 require "nvim-autopairs".setup()
+require "gitsigns".setup()
 
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
