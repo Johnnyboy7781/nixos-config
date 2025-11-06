@@ -19,7 +19,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-mini/mini.files" }
 })
 
-vim.cmd("colorscheme vague")
+-- vim.cmd("colorscheme vague")
 
 require "mini.pick".setup()
 require "lualine".setup()
