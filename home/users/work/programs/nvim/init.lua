@@ -36,8 +36,5 @@ vim.lsp.enable({
     "lua_ls",
     "nil_ls",
     "angularls",
-    "cssmodules_ls",
-    "dockerls",
     "java_language_server",
-    "eslint"
 })
