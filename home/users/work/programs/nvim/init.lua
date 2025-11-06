@@ -30,5 +30,6 @@ vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
 vim.keymap.set('n', '<leader>e', ':Oil --float .<CR>')
+vim.keymap.set('n', '<leader>w', ':write')
 
 vim.lsp.enable({ "lua_ls", "nil_ls" })
