@@ -10,7 +10,6 @@
         git
         wget
         zellij
-        tmux
     ];
 
     environment.shells = with pkgs; [ zsh ];
