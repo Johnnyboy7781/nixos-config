@@ -16,7 +16,8 @@ vim.pack.add({
     { src = "https://github.com/neovim/nvim-lspconfig" },
     { src = "https://github.com/vague2k/vague.nvim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
-    { src = "https://github.com/nvim-mini/mini.files" }
+    { src = "https://github.com/nvim-mini/mini.files" },
+    { src = "https://github.com/karb94/neoscroll.nvim" }
 })
 
 require "vague".setup({
@@ -27,6 +28,7 @@ vim.cmd("colorscheme vague")
 require "mini.pick".setup()
 require "lualine".setup()
 require "mini.files".setup()
+require "neoscroll".setup()
 
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
