@@ -10,6 +10,7 @@
         git
         wget
         zellij
+        deno
     ];
 
     environment.shells = with pkgs; [ zsh ];
