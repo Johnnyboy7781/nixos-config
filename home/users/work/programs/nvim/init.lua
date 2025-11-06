@@ -20,8 +20,7 @@ vim.pack.add({
     { src = "https://github.com/karb94/neoscroll.nvim" },
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
-    { src = "https://github.com/nvim-mini/mini.comment" },
-    { src = "https://github.com/toppair/peek.nvim" }
+    { src = "https://github.com/nvim-mini/mini.comment" }
 })
 
 require "vague".setup({
@@ -36,7 +35,6 @@ require "mini.files".setup()
 require "neoscroll".setup()
 require "nvim-autopairs".setup()
 require "gitsigns".setup()
-require "peek".setup()
 
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
@@ -61,6 +59,3 @@ vim.lsp.enable({
     "angularls",
     "java_language_server",
 })
-
-vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
-vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
