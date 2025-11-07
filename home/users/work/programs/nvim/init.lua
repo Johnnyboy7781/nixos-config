@@ -54,7 +54,13 @@ require "nvim-treesitter".setup({
     }
 })
 
-require "mini.pick".setup()
+require "mini.pick".setup({
+    mappings = {
+        move_up = '<C-k>',
+        move_down = '<C-j>'
+    }
+})
+
 require "mini.comment".setup()
 require "lualine".setup()
 require "mini.files".setup()
