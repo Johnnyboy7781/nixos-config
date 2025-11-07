@@ -70,6 +70,10 @@ vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>mds', ':Markview splitToggle<CR>')
 vim.keymap.set('n', '<leader>mdt', ':Markview toggle<CR>')
+vim.keymap.set('n', 'j', 'gj')
+vim.keymap.set('n', 'k', 'gk')
+vim.keymap.set('n', '0', 'g0')
+vim.keymap.set('n', '<S-$>', 'g<S-$>')
 
 vim.lsp.config('lua_ls', {
     settings = {
