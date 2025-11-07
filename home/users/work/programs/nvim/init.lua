@@ -25,8 +25,7 @@ vim.pack.add({
     {
         src = "https://github.com/OXY2DEV/markview.nvim",
         data = {
-            lazy = false,
-            enable = false
+            lazy = false
         }
     },
     {
@@ -69,7 +68,8 @@ vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
 vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
-vim.keymap.set('n', '<leader>md', ':Markview splitToggle<CR>')
+vim.keymap.set('n', '<leader>mds', ':Markview splitToggle<CR>')
+vim.keymap.set('n', '<leader>mdt', ':Markview toggle<CR>')
 
 vim.lsp.config('lua_ls', {
     settings = {
