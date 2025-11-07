@@ -9,7 +9,6 @@ vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
 vim.o.termguicolors = true
 vim.o.ignorecase = true
-vim.o.wrap = false
 vim.g.mapleader = " "
 
 vim.pack.add({
