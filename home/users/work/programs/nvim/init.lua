@@ -23,6 +23,12 @@ vim.pack.add({
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
     { src = "https://github.com/nvim-mini/mini.comment" },
     {
+        src = "https://github.com/OXY2DEV/markview.nvim",
+        data = {
+            lazy = false
+        }
+    },
+    {
         src = "https://github.com/nvim-treesitter/nvim-treesitter",
         data = {
             lazy = false,
@@ -38,7 +44,14 @@ require "vague".setup({
 vim.cmd("colorscheme vague")
 
 require "nvim-treesitter".setup({
-    ensure_installed = { "markdown", "markdown_inline", "html", "latex", "yaml" }
+    ensure_installed = {
+        "markdown",
+        "markdown_inline",
+        "html",
+        "latex",
+        "yaml",
+        "typst"
+    }
 })
 
 require "mini.pick".setup()
