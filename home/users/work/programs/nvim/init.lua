@@ -9,6 +9,8 @@ vim.o.signcolumn = "yes"
 vim.o.winborder = "rounded"
 vim.o.termguicolors = true
 vim.o.ignorecase = true
+vim.o.spell = true
+vim.o.spelllang = "en_us"
 vim.g.mapleader = " "
 
 vim.pack.add({
