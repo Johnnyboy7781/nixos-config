@@ -21,7 +21,6 @@ vim.pack.add({
     { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
     { src = "https://github.com/nvim-mini/mini.comment" },
-    { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
     {
         src = "https://github.com/nvim-treesitter/nvim-treesitter",
         data = {
@@ -41,7 +40,6 @@ require "nvim-treesitter".setup({
     ensure_installed = { "markdown", "markdown_inline", "html", "latex", "yaml" }
 })
 
-require "render-markdown".setup()
 require "mini.pick".setup()
 require "mini.comment".setup()
 require "lualine".setup()
