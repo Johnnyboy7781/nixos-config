@@ -25,7 +25,8 @@ vim.pack.add({
     {
         src = "https://github.com/OXY2DEV/markview.nvim",
         data = {
-            lazy = false
+            lazy = false,
+            enable = false
         }
     },
     {
