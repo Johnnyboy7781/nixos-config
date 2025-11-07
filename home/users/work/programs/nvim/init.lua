@@ -11,6 +11,7 @@ vim.o.termguicolors = true
 vim.o.ignorecase = true
 vim.o.spell = true
 vim.o.spelllang = "en_us"
+vim.o.spellsuggest = 5
 vim.g.mapleader = " "
 
 vim.pack.add({
