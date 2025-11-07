@@ -84,7 +84,7 @@ vim.keymap.set('n', '<leader>mdt', ':Markview toggle<CR>')
 vim.keymap.set('n', 'j', 'gj', { noremap = true })
 vim.keymap.set('n', 'k', 'gk', { noremap = true })
 vim.keymap.set('n', '0', 'g0', { noremap = true })
-vim.keymap.set('n', '<S-k4>', 'g<S-k4>', { noremap = true })
+vim.keymap.set('n', '<S-<k4>>', 'g<S-<k4>>', { noremap = true })
 
 vim.lsp.config('lua_ls', {
     settings = {
