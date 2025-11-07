@@ -60,8 +60,8 @@ require "nvim-treesitter".setup({
 })
 
 local mini_pick_win_config = function()
-    local height = math.floor(0.618 * vim.o.lines)
-    local width = math.floor(0.618 * vim.o.columns)
+    local height = math.floor(0.80 * vim.o.lines)
+    local width = math.floor(0.80 * vim.o.columns)
     return {
         anchor = 'NW', height = height, width = width,
         row = math.floor(0.5 * (vim.o.lines - height)),
