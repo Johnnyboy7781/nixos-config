@@ -74,6 +74,7 @@ require "nvim-autopairs".setup()
 require "gitsigns".setup()
 
 vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
+vim.keymap.set('n', '<leader>s', ':Pick grep_live<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
