@@ -12,6 +12,9 @@ vim.o.ignorecase = true
 vim.o.spell = true
 vim.o.spelllang = "en_us"
 vim.o.spellsuggest = "5"
+vim.o.linebreak = true
+vim.o.breakindent = true
+vim.o.showbreak = "+++ "
 vim.g.mapleader = " "
 
 vim.pack.add({
