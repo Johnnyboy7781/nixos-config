@@ -11,6 +11,8 @@
 
     extraLuaConfig = ''
         ${builtins.readFile ./init.lua}
+	${builtins.readFile ./options.lua}
+	${builtins.readFile ./mappings.lua}
     '';
   };
 }
