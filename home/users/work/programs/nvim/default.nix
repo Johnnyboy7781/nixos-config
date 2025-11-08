@@ -8,8 +8,6 @@
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
     ${builtins.readFile ./init.lua}
-    require "nvim-autopairs".setup()
-    require "gitsigns".setup()
     '';
 
     extraPackages = with pkgs; [
@@ -18,8 +16,16 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
-        gitsigns-nvim
-        nvim-autopairs
+        {
+            plugin = gitsigns-nvim;
+            type = "lua";
+            config = builtins.readFile ./plugins/gitsigns.lua;
+        }
+        {
+            plugin = nvim-autopairs;
+            type = "lua";
+            config = builtins.readFile ./plugins/nvim-autopairs.lua;
+        }
     ];
   };
 }
