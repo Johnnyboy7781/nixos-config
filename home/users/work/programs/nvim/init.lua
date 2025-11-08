@@ -1,4 +1,4 @@
-require("options.lua")
+require("options")
 
 vim.pack.add({
     { src = "https://github.com/echasnovski/mini.pick" },
