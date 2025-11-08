@@ -7,6 +7,7 @@
     extraLuaConfig = ''
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
+    ${builtins.readFile ./init.lua}
     '';
 
     extraPackages = with pkgs; [
@@ -15,11 +16,7 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
-        {
-            plugin = gitsigns;
-            type = "lua";
-            config = ''require "gitsigns".setup()'';
-        }
+        gitsigns-nvim
     ];
   };
 }
