@@ -1,5 +1,4 @@
 vim.pack.add({
-    { src = "https://github.com/vague2k/vague.nvim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/karb94/neoscroll.nvim" },
     { src = "https://github.com/nvim-mini/mini.comment" },
@@ -18,11 +17,6 @@ vim.pack.add({
         }
     }
 })
-
-require "vague".setup({
-    italic = false
-})
-vim.cmd("colorscheme vague")
 
 require "nvim-treesitter".setup({
     ensure_installed = {
