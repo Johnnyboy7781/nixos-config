@@ -48,4 +48,5 @@ vim.lsp.enable({
     "nil_ls",
     "angularls",
     "java_language_server",
+    "bashls"
 })
