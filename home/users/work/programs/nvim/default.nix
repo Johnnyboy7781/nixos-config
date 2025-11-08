@@ -17,6 +17,7 @@
 
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
+        rose-pine
         {
             plugin = tokyonight-nvim;
             type = "lua";
