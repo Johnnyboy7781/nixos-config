@@ -17,9 +17,8 @@
 
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
-        rose-pine
         {
-            plugin = tokyonight-nvim;
+            plugin = rose-pine;
             type = "lua";
             config = builtins.readFile ./plugins/colorscheme.lua;
         }
