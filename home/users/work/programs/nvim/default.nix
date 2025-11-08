@@ -8,6 +8,7 @@
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
     ${builtins.readFile ./init.lua}
+    require "nvim-autopairs".setup()
     '';
 
     extraPackages = with pkgs; [
