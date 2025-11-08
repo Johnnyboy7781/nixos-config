@@ -5,6 +5,7 @@
     defaultEditor = true;
 
     extraLuaConfig = ''
+    require("gitsigns").setup()
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
     ${builtins.readFile ./init.lua}
