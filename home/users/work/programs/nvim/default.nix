@@ -26,6 +26,11 @@
             type = "lua";
             config = builtins.readFile ./plugins/autopairs.lua;
         }
+        {
+            plugin = mini-files;
+            type = "lua";
+            config = builtins.readFile ./plugins/mini-files.lua;
+        }
     ];
   };
 }
