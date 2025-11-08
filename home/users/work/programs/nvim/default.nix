@@ -19,7 +19,7 @@
         {
             plugin = gitsigns-nvim;
             type = "lua";
-            config = ''require("gitsigns").setup()'';
+            config = ''require("gitsigns-nvim").setup()'';
         }
     ];
   };
