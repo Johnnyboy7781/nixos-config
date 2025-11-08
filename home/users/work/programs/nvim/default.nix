@@ -24,7 +24,7 @@
         {
             plugin = nvim-autopairs;
             type = "lua";
-            config = builtins.readFile ./plugins/nvim-autopairs.lua;
+            config = builtins.readFile ./plugins/autopairs.lua;
         }
     ];
   };
