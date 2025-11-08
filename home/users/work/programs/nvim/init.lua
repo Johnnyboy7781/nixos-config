@@ -67,20 +67,6 @@ require "neoscroll".setup()
 require "nvim-autopairs".setup()
 require "gitsigns".setup()
 
-vim.keymap.set('n', '<leader>f', ':Pick files<CR>')
-vim.keymap.set('n', '<leader>s', ':Pick grep_live<CR>')
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
-vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
-vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>')
-vim.keymap.set('n', '<leader>w', ':write<CR>')
-vim.keymap.set('n', '<leader>mds', ':Markview splitToggle<CR>')
-vim.keymap.set('n', '<leader>mdt', ':Markview toggle<CR>')
-vim.keymap.set('n', 'j', 'gj', { noremap = true })
-vim.keymap.set('n', 'k', 'gk', { noremap = true })
-vim.keymap.set('n', '0', 'g0', { noremap = true })
-vim.keymap.set('n', '$', 'g$', { noremap = true })
-
 vim.lsp.config('lua_ls', {
     settings = {
         Lua = {
