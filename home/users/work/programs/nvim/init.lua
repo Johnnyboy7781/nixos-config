@@ -43,16 +43,9 @@ vim.lsp.config('lua_ls', {
     }
 })
 
-vim.lsp.config('bashls', {
-    filetypes = {
-        "bash", "sh", "zsh"
-    }
-})
-
 vim.lsp.enable({
     "lua_ls",
     "nil_ls",
     "angularls",
     "java_language_server",
-    "bashls"
 })
