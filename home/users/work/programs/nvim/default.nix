@@ -16,6 +16,7 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
+        nvim-lspconfig
         {
             plugin = gitsigns-nvim;
             type = "lua";
