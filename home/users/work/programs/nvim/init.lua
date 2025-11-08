@@ -3,7 +3,6 @@ vim.pack.add({
     { src = "https://github.com/neovim/nvim-lspconfig" },
     { src = "https://github.com/vague2k/vague.nvim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
-    { src = "https://github.com/nvim-mini/mini.files" },
     { src = "https://github.com/karb94/neoscroll.nvim" },
     { src = "https://github.com/nvim-mini/mini.comment" },
     {
@@ -60,7 +59,6 @@ require "mini.pick".setup({
 
 require "mini.comment".setup()
 require "lualine".setup()
-require "mini.files".setup()
 require "neoscroll".setup()
 
 vim.lsp.config('lua_ls', {
