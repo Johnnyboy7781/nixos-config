@@ -7,7 +7,7 @@
     extraLuaConfig = ''
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
-    ${builtins.readFile ./init.lua}
+    # ${builtins.readFile ./init.lua}
     '';
 
     extraPackages = with pkgs; [
