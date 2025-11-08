@@ -7,7 +7,7 @@
     extraLuaConfig = ''
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
-    ${builtins.readFile ./init.lua}
+    ${builtins.readFile ./lsp.lua}
     '';
 
     extraPackages = with pkgs; [
@@ -17,30 +17,51 @@
 
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
+        markview-nvim
         {
             plugin = rose-pine;
-	    type = "lua";
+            type = "lua";
             config = builtins.readFile ./plugins/colorscheme.lua;
         }
         {
             plugin = gitsigns-nvim;
-	    type = "lua";
+            type = "lua";
             config = builtins.readFile ./plugins/gitsigns.lua;
         }
         {
             plugin = nvim-autopairs;
-	    type = "lua";
+            type = "lua";
             config = builtins.readFile ./plugins/autopairs.lua;
         }
         {
             plugin = mini-files;
-	    type = "lua";
+            type = "lua";
             config = builtins.readFile ./plugins/mini-files.lua;
         }
         {
             plugin = mini-pick;
-	    type = "lua";
+            type = "lua";
             config = builtins.readFile ./plugins/mini-pick.lua;
+        }
+        {
+            plugin = lualine-nvim;
+            type = "lua";
+            config = builtins.readFile ./plugins/lualine.lua;
+        }
+        {
+            plugin = neoscroll-nvim;
+            type = "lua";
+            config = builtins.readFile ./plugins/neoscroll.lua;
+        }
+        {
+            plugin = mini-comment;
+            type = "lua";
+            config = builtins.readFile ./plugins/mini-comment.lua;
+        }
+        {
+            plugin = nvim-treesitter;
+            type = "lua";
+            config = builtins.readFile ./plugins/nvim-treesitter.lua;
         }
     ];
   };
