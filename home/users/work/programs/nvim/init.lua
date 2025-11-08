@@ -5,7 +5,6 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/nvim-mini/mini.files" },
     { src = "https://github.com/karb94/neoscroll.nvim" },
-    { src = "https://github.com/windwp/nvim-autopairs" },
     { src = "https://github.com/nvim-mini/mini.comment" },
     {
         src = "https://github.com/OXY2DEV/markview.nvim",
@@ -63,7 +62,6 @@ require "mini.comment".setup()
 require "lualine".setup()
 require "mini.files".setup()
 require "neoscroll".setup()
-require "nvim-autopairs".setup()
 
 vim.lsp.config('lua_ls', {
     settings = {

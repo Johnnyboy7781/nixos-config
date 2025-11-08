@@ -17,6 +17,7 @@
 
     plugins = with pkgs.vimPlugins; [
         gitsigns-nvim
+        nvim-autopairs
     ];
   };
 }
