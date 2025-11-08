@@ -1,21 +1,4 @@
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.shiftwidth = 4
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.expandtab = true
-vim.o.scrolloff = 10
-vim.o.signcolumn = "yes"
-vim.o.winborder = "rounded"
-vim.o.termguicolors = true
-vim.o.ignorecase = true
-vim.o.spell = true
-vim.o.spelllang = "en_us"
-vim.o.spellsuggest = "5"
-vim.o.linebreak = true
-vim.o.breakindent = true
-vim.o.showbreak = "+++ "
-vim.g.mapleader = " "
+require("options.lua")
 
 vim.pack.add({
     { src = "https://github.com/echasnovski/mini.pick" },
