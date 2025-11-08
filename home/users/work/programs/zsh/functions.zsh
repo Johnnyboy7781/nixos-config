@@ -23,7 +23,7 @@ rebuild() {
   fi
 
   if [[ -z $proceedWithoutChanges ]]; then
-    git add .
+    sudo git add .
     read "?Commit message: " commitMsg
     git commit -m ${(L)commitMsg}
   fi
