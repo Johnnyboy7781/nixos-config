@@ -9,7 +9,6 @@
     environment.systemPackages = with pkgs; [
         git
         wget
-        zellij
     ];
 
     environment.shells = with pkgs; [ zsh ];
