@@ -9,6 +9,7 @@
     ${builtins.readFile ./mappings.lua}
     ${builtins.readFile ./init.lua}
     require "nvim-autopairs".setup()
+    require "gitsigns".setup()
     '';
 
     extraPackages = with pkgs; [
