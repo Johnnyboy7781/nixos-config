@@ -17,7 +17,11 @@
 
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
-        tokyonight-nvim
+        {
+            plugin = tokyonight-nvim;
+            type = "lua";
+            config = builtins.readFile ./plugins/colorscheme.lua;
+        }
         {
             plugin = gitsigns-nvim;
             type = "lua";
