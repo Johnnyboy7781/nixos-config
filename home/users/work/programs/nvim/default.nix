@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 {
   programs.neovim = {
     enable = true;
@@ -10,9 +10,9 @@
     ];
 
     extraLuaConfig = ''
-        ${builtins.readFile ./init.lua}
-	${builtins.readFile ./options.lua}
-	${builtins.readFile ./mappings.lua}
+    ${builtins.readFile ./options.lua}
+    ${builtins.readFile ./mappings.lua}
+    ${builtins.readFile ./init.lua}
     '';
   };
 }
