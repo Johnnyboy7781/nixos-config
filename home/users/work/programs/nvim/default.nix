@@ -15,7 +15,11 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
-        gitsigns-nvim
+        {
+            plugin = gitsigns-nvim;
+            type = "lua";
+            config = ''require "gitsigns".setup()'';
+        }
     ];
   };
 }
