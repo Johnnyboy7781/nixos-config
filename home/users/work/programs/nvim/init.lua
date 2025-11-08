@@ -1,5 +1,4 @@
 vim.pack.add({
-    { src = "https://github.com/echasnovski/mini.pick" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
     { src = "https://github.com/vague2k/vague.nvim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
@@ -34,26 +33,6 @@ require "nvim-treesitter".setup({
         "latex",
         "yaml",
         "typst"
-    }
-})
-
-local mini_pick_win_config = function()
-    local height = math.floor(0.80 * vim.o.lines)
-    local width = math.floor(0.80 * vim.o.columns)
-    return {
-        anchor = 'NW', height = height, width = width,
-        row = math.floor(0.5 * (vim.o.lines - height)),
-        col = math.floor(0.5 * (vim.o.columns - width))
-    }
-end
-
-require "mini.pick".setup({
-    mappings = {
-        move_up = '<C-k>',
-        move_down = '<C-j>'
-    },
-    window = {
-        config = mini_pick_win_config
     }
 })
 

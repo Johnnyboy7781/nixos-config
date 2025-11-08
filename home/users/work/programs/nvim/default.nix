@@ -31,6 +31,11 @@
             type = "lua";
             config = builtins.readFile ./plugins/mini-files.lua;
         }
+        {
+            plugin = mini-pick;
+            type = "lua";
+            config = builtins.readFile ./plugins/mini-pick.lua;
+        }
     ];
   };
 }
