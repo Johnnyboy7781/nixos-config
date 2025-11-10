@@ -9,6 +9,7 @@
     environment.systemPackages = with pkgs; [
         git
         wget
+        fd
     ];
 
     environment.shells = with pkgs; [ zsh ];
