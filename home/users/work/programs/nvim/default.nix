@@ -20,7 +20,7 @@
         markview-nvim
         plenary-nvim
         {
-            plugin = telescop-nvim;
+            plugin = telescope-nvim;
             type = "lua";
             config = builtins.readFile ./plugins/telescope.lua;
         }
