@@ -19,6 +19,7 @@
         nvim-lspconfig
         markview-nvim
         plenary-nvim
+        telescope-nvim
         {
             plugin = rose-pine;
             type = "lua";
