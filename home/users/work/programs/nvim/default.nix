@@ -18,6 +18,7 @@
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
         markview-nvim
+        plenary-nvim
         {
             plugin = rose-pine;
             type = "lua";
