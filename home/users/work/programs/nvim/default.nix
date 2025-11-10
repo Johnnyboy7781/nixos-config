@@ -19,7 +19,11 @@
         nvim-lspconfig
         markview-nvim
         plenary-nvim
-        telescope-nvim
+        {
+            plugin = telescop-nvim;
+            type = "lua";
+            config = builtins.readFile ./plugins/telescope.lua;
+        }
         {
             plugin = rose-pine;
             type = "lua";
