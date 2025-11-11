@@ -29,7 +29,7 @@ require "gitsigns".setup({
         map('n', '<leader>gr', gitsigns.reset_hunk)
         map('n', '<leader>gR', gitsigns.reset_buffer)
         map('n', '<leader>gp', gitsigns.preview_hunk_inline)
-        map('n', '<leader>gp', function()
+        map('n', '<leader>gb', function()
             gitsigns.blame_line({full = true})
         end)
     end
