@@ -30,5 +30,6 @@ require "gitsigns".setup({
         map('n', '<leader>gR', gitsigns.reset_buffer)
         map('n', '<leader>gp', gitsigns.preview_hunk_inline)
         map('n', '<leader>gb', gitsigns.blame)
+        map('n', '<leader>gl', gitsigns.setqflist)
     end
 })
