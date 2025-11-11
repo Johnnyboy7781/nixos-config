@@ -1,7 +1,4 @@
 -- basic
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
-vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover)
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 
 -- project navigation
@@ -21,3 +18,15 @@ vim.keymap.set('n', 'k', 'gk', { noremap = true })
 vim.keymap.set('n', '0', 'g0', { noremap = true })
 vim.keymap.set('n', '$', 'g$', { noremap = true })
 
+-- lsp
+vim.api.nvim_create_autocmd('LspAttach', {
+    callback = function()
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+        vim.keymap.set('n', 'gi', vim.lsp.buf.declaration)
+        vim.keymap.set('n', 'K', vim.lsp.buf.hover)
+        vim.keymap.set('n', 'gr', vim.lsp.buf.references)
+        vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename)
+        vim.keymap.set('n', '<leader>vf', vim.lsp.buf.format)
+        vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
+    end
+})

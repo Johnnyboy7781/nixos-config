@@ -9,6 +9,7 @@
       c = "clear";
       src = "source ~/.zshrc";
       s = "git status";
+      a = "git add .";
       z = "zellij";
       ls = "eza";
     };

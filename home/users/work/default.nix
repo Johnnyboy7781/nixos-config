@@ -29,6 +29,17 @@
     yq-go
     eza
     fzf
+    nodejs
+    nodePackages."@angular/cli"
+    curl
+    jdt-language-server
+    jdk
+    maven
+    aws-azure-login
+    kubectl
+    nodePackages.prettier
+    ggshield
+    lazygit
     
     # misc
     glow # markdown previewer

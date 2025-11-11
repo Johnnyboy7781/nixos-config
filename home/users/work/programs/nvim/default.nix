@@ -11,14 +11,24 @@
     '';
 
     extraPackages = with pkgs; [
+        nodePackages.typescript-language-server
+        nodePackages.vscode-langservers-extracted
+        nodePackages.bash-language-server
+        angular-language-server
+        emmet-ls
+        dockerfile-language-server-nodejs
+        yaml-language-server
         lua-language-server
         nil
+        nixd
     ];
 
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
         markview-nvim
         plenary-nvim
+        nvim-cmp
+        cmp-nvim-lsp
         {
             plugin = telescope-nvim;
             type = "lua";
