@@ -73,7 +73,7 @@
           hide_session_name = true;
         };
         layout = {
-            tab = {
+            default_tab_template = {
                 pane = {
                     cwd = "~";
                 };
