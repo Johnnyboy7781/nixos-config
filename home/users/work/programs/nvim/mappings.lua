@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open(vim.api.nvim_buf_get_name(
 
 -- markdown preview
 vim.keymap.set('n', '<leader>mp', ':MarkdownPreviewToggle<CR>')
-vim.keymap.set('n', '<leader>mt', ':Markview toggle')
+vim.keymap.set('n', '<leader>mt', ':Markview toggle<CR>')
 
 -- wrap
 vim.keymap.set('n', 'j', 'gj', { noremap = true })
