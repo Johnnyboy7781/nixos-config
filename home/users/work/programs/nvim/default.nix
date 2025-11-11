@@ -8,6 +8,7 @@
     ${builtins.readFile ./options.lua}
     ${builtins.readFile ./mappings.lua}
     ${builtins.readFile ./lsp.lua}
+    ${builtins.readFile ./autocmds.lua}
     '';
 
     extraPackages = with pkgs; [
