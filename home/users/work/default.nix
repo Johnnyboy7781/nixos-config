@@ -70,6 +70,13 @@
           rounded_corners = true;
           hide_session_name = true;
         };
+        layout = {
+            tab = {
+                pane = {
+                    cwd = "~";
+                };
+            };
+        };
       };
   };
   
