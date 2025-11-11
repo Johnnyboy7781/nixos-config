@@ -12,6 +12,7 @@
       a = "git add .";
       z = "zellij";
       ls = "eza";
+      lg = "lazygit";
     };
 
     oh-my-zsh = {
