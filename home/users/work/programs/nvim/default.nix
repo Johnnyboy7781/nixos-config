@@ -25,7 +25,7 @@
 
     plugins = with pkgs.vimPlugins; [
         nvim-lspconfig
-        markview-nvim
+        markdown-preview-nvim
         plenary-nvim
         nvim-cmp
         cmp-nvim-lsp
