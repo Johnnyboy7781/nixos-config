@@ -72,14 +72,7 @@
           rounded_corners = true;
           hide_session_name = true;
         };
-        layout = {
-            default_tab_template = {
-                pane = {
-                    cwd = "~";
-                };
-            };
-        };
-      };
+    };
   };
   
   home.stateVersion = "25.05";
