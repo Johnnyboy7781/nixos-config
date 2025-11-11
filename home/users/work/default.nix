@@ -40,6 +40,7 @@
     nodePackages.prettier
     ggshield
     lazygit
+    age
     
     # misc
     glow # markdown previewer
