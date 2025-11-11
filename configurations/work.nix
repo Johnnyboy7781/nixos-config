@@ -1,5 +1,7 @@
-{ pkgs, ... }:
-
+{ pkgs, lib, ... }:
+let
+    kmiCacertPath = "/home/nixos/cacerts/trusted.kmi.lan.pem";
+in
 {
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -22,7 +24,7 @@
         shell = pkgs.zsh;
     };
 
-    security.pki.certificates = [
+    security.pki.certificates = lib.mkIf (builtins.pathExists kmiCacertPath) [
         (builtins.readFile /home/nixos/cacerts/trusted.kmi.lan.pem)
     ];
 
