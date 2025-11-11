@@ -1,5 +1,5 @@
 require "gitsigns".setup({
-    numlh = true,
+    numhl = true,
     on_attach = function(bufnr)
         local gitsigns = require('gitsigns')
 
