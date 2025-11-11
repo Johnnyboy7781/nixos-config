@@ -9,17 +9,17 @@ require "gitsigns".setup({
         end
 
         -- nav
-        map('n', ']g', function()
+        map('n', 'g]', function()
             if vim.wo.diff then
-                vim.cmd.normal({']g', bang = true})
+                vim.cmd.normal({'g]', bang = true})
             else
                 gitsigns.nav_hunk('next')
             end
         end)
 
-        map('n', '[g', function()
+        map('n', 'g[', function()
             if vim.wo.diff then
-                vim.cmd.normal({'[g', bang = true})
+                vim.cmd.normal({'g[', bang = true})
             else
                 gitsigns.nav_hunk('prev')
             end
@@ -29,8 +29,6 @@ require "gitsigns".setup({
         map('n', '<leader>gr', gitsigns.reset_hunk)
         map('n', '<leader>gR', gitsigns.reset_buffer)
         map('n', '<leader>gp', gitsigns.preview_hunk_inline)
-        map('n', '<leader>gb', function()
-            gitsigns.blame_line({full = true})
-        end)
+        map('n', '<leader>gb', gitsigns.blame_line)
     end
 })
