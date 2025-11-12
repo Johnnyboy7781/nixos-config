@@ -3,7 +3,9 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    initContent = "source ${./functions.zsh}";
+    initContent = ''
+        source ${./functions.zsh}
+    '';
 
     shellAliases = {
       c = "clear";
