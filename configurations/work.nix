@@ -12,7 +12,6 @@ in
         git
         wget
         fd
-        ungoogled-chromium
     ];
 
     environment.shells = with pkgs; [ zsh ];
