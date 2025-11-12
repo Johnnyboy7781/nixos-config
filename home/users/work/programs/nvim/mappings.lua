@@ -1,5 +1,6 @@
 -- basic
 vim.keymap.set('n', '<leader>w', ':write<CR>')
+vim.keymap.set('n', 'd/', ':noh')
 
 -- project navigation
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')

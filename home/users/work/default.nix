@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   imports = [
   	./programs/zsh
@@ -8,9 +8,15 @@
   home.username = "nixos";
   home.homeDirectory = "/home/nixos";
 
-  xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xft.dpi" = 172;
+  sops = {
+    age.keyFile = "/home/nixos/.config/sops/age/keys.txt";
+    defaultSopsFile = ./secrets/kinsale.yaml;
+    defaultSymlinkPath = "/run/user/1000/secrets";
+    defaultSecretsMountPoint = "/run/user/1000/secrets.d";
+
+    secrets.api_key = {
+        path = "${config.sops.defaultSymlinkPath}/api_key";
+    };
   };
 
   home.packages = with pkgs; [
@@ -42,6 +48,7 @@
     lazygit
     age
     sops
+    nix-zsh-completions
     
     # misc
     glow # markdown previewer
