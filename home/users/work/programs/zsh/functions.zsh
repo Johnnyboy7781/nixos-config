@@ -52,3 +52,8 @@ mkd() {
 path() {
     echo $PATH | tr ':' '\n'
 }
+
+dev() {
+    word_to_echo=${1:"no argument passed!"}
+    echo $word_to_echo
+}
