@@ -4,5 +4,8 @@
         enable = true;
         userName = "Jonathan McDonnell";
         userEmail = "jonathan.mcdonnell@kinsaleins.com";
+        ignores = [
+            "~/projects/**/shells"
+        ];
     };
 }
