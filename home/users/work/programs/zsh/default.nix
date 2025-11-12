@@ -1,9 +1,10 @@
-{...}:
+{ config, ... }:
 {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
     initContent = ''
+        export FAKE_API_TOKEN=$(cat ${config.sops.secrets.api_key.path})
         source ${./functions.zsh}
     '';
 

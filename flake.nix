@@ -8,9 +8,10 @@
             url = "github:nix-community/home-manager/release-25.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        sops-nix.url = "github:Mic92/sops-nix";
     };
 
-    outputs = { nixpkgs, nixos-wsl, home-manager, ... }@inputs: 
+    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, ... }: 
     {
         nixosConfigurations = {
             nixos = nixpkgs.lib.nixosSystem {
@@ -19,10 +20,14 @@
                     ./configurations/work.nix
                     nixos-wsl.nixosModules.default
                     home-manager.nixosModules.home-manager
+                    sops-nix.nixosModules.sops
                     {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
                         home-manager.users.nixos = import ./home/users/work;
+                        home-manager.sharedModules = [
+                            sops-nix.homeManagerModules.sops
+                        ];
                     }
                 ];
             };
