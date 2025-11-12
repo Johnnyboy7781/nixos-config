@@ -54,6 +54,6 @@ path() {
 }
 
 dev() {
-    word_to_echo=${1:"no argument passed!"}
+    word_to_echo=${1:-"no argument passed!"}
     echo $word_to_echo
 }
