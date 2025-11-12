@@ -1,5 +1,5 @@
 {
-    description = "A simple NixOS flake";
+    description = "Jojo's NixOS Config :^)";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -9,6 +9,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+        inputs.sops-nix = {
+            url = "github:Mic92/sops.nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = { self, nixpkgs, nixos-wsl, home-manager, ... }@inputs: 
