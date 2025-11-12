@@ -4,7 +4,10 @@
         enable = true;
         userName = "Jonathan McDonnell";
         userEmail = "jonathan.mcdonnell@kinsaleins.com";
-        config = {
+        ignores = [
+            "**/shells/"
+        ];
+        extraConfig = {
             push = { autoSetupRemote = true; };
         };
     };
