@@ -15,7 +15,7 @@
         };
     };
 
-    outputs = { self, nixpkgs, nixos-wsl, home-manager, ... }@inputs: 
+    outputs = { nixpkgs, nixos-wsl, home-manager, ... }@inputs: 
     let
         overlays = [
             inputs.neovim-nightly-overlay.overlays.default
