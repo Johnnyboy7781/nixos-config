@@ -17,8 +17,8 @@
     defaultSymlinkPath = "/run/user/1000/secrets";
     defaultSecretsMountPoint = "/run/user/1000/secrets.d";
 
-    secrets.api_key = {
-        path = "${config.sops.defaultSymlinkPath}/api_key";
+    secrets.NPM_PUBLISH_TOKEN = {
+        path = "${config.sops.defaultSymlinkPath}/NPM_PUBLISH_TOKEN";
     };
   };
 
