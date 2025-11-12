@@ -4,7 +4,7 @@
     enable = true;
     enableCompletion = true;
     initContent = ''
-        export FAKE_API_TOKEN=$(cat ${config.sops.secrets.api_key.path})
+        export NPM_PUBLISH_TOKEN=$(cat ${config.sops.secrets.NPM_PUBLISH_TOKEN.path})
         source ${./functions.zsh}
     '';
 
