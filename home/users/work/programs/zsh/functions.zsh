@@ -53,7 +53,7 @@ path() {
     echo $PATH | tr ':' '\n'
 }
 
-dev() {
-    word_to_echo=${1:-"no argument passed!"}
-    echo $word_to_echo
+tab() {
+    tab_name=${1:-$(basename $PWD)}
+    zellij action go-to-tab-name $tab_name -c
 }
