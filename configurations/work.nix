@@ -8,6 +8,17 @@ in
     wsl.enable = true;
     wsl.defaultUser = "nixos";
 
+    systemd.services.wsl-vpnkit = {
+        enable = true;
+        description = "WSL VPNKit Service";
+        after = ["network.target"];
+        serviceConfig = {
+            ExecStart = "${pkgs.wsl-vpnkit}/bin/wsl-vpnkit";
+            Restart = "always";
+            KillMode = "mixed";
+        };
+    };
+
     environment.systemPackages = with pkgs; [
         git
         wget
