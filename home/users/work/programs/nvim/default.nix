@@ -62,6 +62,11 @@
             config = builtins.readFile ./plugins/mini-pick.lua;
         }
         {
+            plugin = mini-icons;
+            type = "lua";
+            config = builtins.readFile ./plugins/mini-icons.lua;
+        }
+        {
             plugin = lualine-nvim;
             type = "lua";
             config = builtins.readFile ./plugins/lualine.lua;
