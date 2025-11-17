@@ -21,7 +21,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "npm" "mvn" "ng" "node" ];
-      theme = "af-magic";
+      theme = "clean";
     };
 
     profileExtra = ''
