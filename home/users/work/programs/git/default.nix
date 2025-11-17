@@ -9,6 +9,10 @@
         ];
         extraConfig = {
             push = { autoSetupRemote = true; };
+            init.defaultBranch = "main";
+        };
+        hooks = {
+            pre-commit = ./pre-commit;
         };
     };
 }
