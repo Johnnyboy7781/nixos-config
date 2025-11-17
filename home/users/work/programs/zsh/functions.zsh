@@ -57,3 +57,16 @@ tab() {
     tab_name=${1:-$(basename $PWD)}
     zellij action go-to-tab-name $tab_name -c
 }
+
+shell() {
+    shell_dir_name="shells"
+
+    if [[ -n "$1" ]]; then
+        shell_file_name="shell.$1.nix"
+    else
+        shell_file_name="shell.nix"
+    fi
+
+    nix-shell "$shell_dir_name/$shell_file_name"
+}
+
