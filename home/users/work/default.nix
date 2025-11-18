@@ -57,7 +57,5 @@
         glow # markdown previewer
     ];
 
-    programs.npm.enable = true;
-
     home.stateVersion = "25.05";
 }
