@@ -28,8 +28,6 @@ in
     environment.shells = with pkgs; [ zsh ];
     programs.zsh.enable = true;
 
-    programs.npm.enable = true;
-
     users.users.nixos = {
         isNormalUser = true;
         name = "nixos";
