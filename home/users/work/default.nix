@@ -23,7 +23,7 @@
     };
 
     home.file.".npmrc".text = lib.generators.toINIWithGlobalSection {} {
-        globalSelection = {
+        globalSection = {
             prefix = "~/.npm-packages";
         };
     };
