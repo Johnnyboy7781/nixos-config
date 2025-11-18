@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, lib, ... }:
 {
     imports = [
         ./programs/zsh
@@ -19,6 +19,12 @@
 
         secrets.NPM_PUBLISH_TOKEN = {
             path = "${config.sops.defaultSymlinkPath}/NPM_PUBLISH_TOKEN";
+        };
+    };
+
+    home.file.".npmrc".text = lib.generators.toINIWithGlobalSection {} {
+        globalSelection = {
+            prefix = "~/.npm-packages";
         };
     };
 
