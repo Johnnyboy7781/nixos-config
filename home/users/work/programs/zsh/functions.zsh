@@ -67,6 +67,6 @@ shell() {
         shell_file_name="shell.nix"
     fi
 
-    nix-shell "$shell_dir_name/$shell_file_name" --run zsh
+    nix-shell "$shell_dir_name/$shell_file_name"
 }
 
