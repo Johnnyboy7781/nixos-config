@@ -5,6 +5,8 @@ in
 {
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+    time.timeZone = "America/New_York";
+
     wsl.enable = true;
     wsl.defaultUser = "nixos";
 
