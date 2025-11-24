@@ -26,7 +26,7 @@ require 'lspconfig'.bashls.setup({})
 require 'lspconfig'.yamlls.setup({})
 require 'lspconfig'.dockerls.setup({})
 require 'lspconfig'.nixd.setup({})
-require 'lspconfig'.rust_analyzer({})
+require 'lspconfig'.rust_analyzer()
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
