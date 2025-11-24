@@ -60,6 +60,7 @@
         nix-zsh-completions
         rustc
         cargo
+        gcc
 
         # misc
         glow # markdown previewer
