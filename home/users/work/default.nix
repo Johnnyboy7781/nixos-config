@@ -58,6 +58,8 @@
         age
         sops
         nix-zsh-completions
+        rustc
+        cargo
 
         # misc
         glow # markdown previewer
