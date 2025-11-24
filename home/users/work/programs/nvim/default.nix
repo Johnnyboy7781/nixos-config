@@ -9,6 +9,7 @@
     ${builtins.readFile ./mappings.lua}
     ${builtins.readFile ./lsp.lua}
     ${builtins.readFile ./autocmds.lua}
+    ${builtins.readFile ./clipboard.lua}
     '';
 
     extraPackages = with pkgs; [

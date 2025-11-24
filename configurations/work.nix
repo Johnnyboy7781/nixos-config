@@ -25,7 +25,6 @@ in
         git
         wget
         fd
-        xclip
     ];
 
     environment.shells = with pkgs; [ zsh ];
