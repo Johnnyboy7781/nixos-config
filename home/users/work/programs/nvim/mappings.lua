@@ -29,6 +29,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
         vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename)
         vim.keymap.set('n', '<leader>lo', vim.diagnostic.open_float)
+        vim.keymap.set('n', '<leader>lh', vim.lsp.buf.document_highlight)
     end
 })
 
