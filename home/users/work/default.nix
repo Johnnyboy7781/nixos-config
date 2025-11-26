@@ -61,6 +61,7 @@
         rustc
         cargo
         gcc
+        rust-analyzer
 
         # misc
         glow # markdown previewer
