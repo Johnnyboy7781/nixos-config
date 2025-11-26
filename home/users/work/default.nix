@@ -61,7 +61,6 @@
         rustc
         rustup
         gcc
-        rust-analyzer
 
         # misc
         glow # markdown previewer
