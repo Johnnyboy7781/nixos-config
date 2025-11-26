@@ -59,6 +59,7 @@
         sops
         nix-zsh-completions
         rustc
+        rustup
         cargo
         gcc
         rust-analyzer
