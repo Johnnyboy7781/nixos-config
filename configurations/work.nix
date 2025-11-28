@@ -28,7 +28,7 @@ in
         josh
     ];
 
-    environment.shells = with pkgs; [ zsh josh ];
+    environment.shells = with pkgs; [ zsh ];
     programs.zsh.enable = true;
 
     users.users.nixos = {
