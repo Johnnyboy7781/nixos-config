@@ -12,7 +12,7 @@
         josh.url = "path:/home/nixos/projects/personal/josh";
     };
 
-    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, ... }: 
+    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, josh, ... }: 
     {
         nixosConfigurations = {
             nixos = nixpkgs.lib.nixosSystem {
@@ -22,6 +22,13 @@
                     nixos-wsl.nixosModules.default
                     home-manager.nixosModules.home-manager
                     sops-nix.nixosModules.sops
+                    ({ config, pkgs, ... }:
+                    let
+                        josh-pkg = josh.packages."x86_64-linux".josh;
+                    in {
+                        environment.systemPackages = [ josh-pkg ];
+                        environment.shells = [ josh-pkg ];
+                    })
                     {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
