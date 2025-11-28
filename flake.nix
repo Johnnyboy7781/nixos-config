@@ -17,6 +17,9 @@
         nixosConfigurations = {
             nixos = nixpkgs.lib.nixosSystem {
                 system = "x86_64-linux";
+                specialArgs = {
+                    joshPkg = josh.packages."x86_64-linux".josh;
+                };
                 modules = [
                     ./configurations/work.nix
                     nixos-wsl.nixosModules.default
