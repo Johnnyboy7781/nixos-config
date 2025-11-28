@@ -12,7 +12,7 @@
         # josh.url = "path:/home/nixos/projects/personal/josh";
     };
 
-    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, josh, ... }: 
+    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, ... }: 
     {
         nixosConfigurations = {
             nixos = nixpkgs.lib.nixosSystem {
