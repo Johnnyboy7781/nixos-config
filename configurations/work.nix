@@ -1,7 +1,6 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, joshPkg, ... }:
 let
     kmiCacertPath = "/home/nixos/cacerts/trusted.kmi.lan.pem";
-    joshPkg = pkgs.josh.packages."x86_64-linux".josh;
 in
 {
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
