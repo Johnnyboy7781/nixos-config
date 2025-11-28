@@ -25,9 +25,10 @@ in
         git
         wget
         fd
+        josh
     ];
 
-    environment.shells = with pkgs; [ zsh ];
+    environment.shells = with pkgs; [ zsh josh ];
     programs.zsh.enable = true;
 
     users.users.nixos = {
