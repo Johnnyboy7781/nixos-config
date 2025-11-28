@@ -55,7 +55,7 @@
         "type": "github"
       }
     },
-    "jojo-sh": {
+    "josh": {
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
@@ -161,7 +161,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "jojo-sh": "jojo-sh",
+        "josh": "josh",
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs_3",
         "sops-nix": "sops-nix"
