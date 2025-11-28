@@ -24,11 +24,11 @@
                     sops-nix.nixosModules.sops
                     ({ config, pkgs, ... }:
                     let
-                        josh-pkg = josh.packages."x86_64-linux".josh;
+                        joshPkg = josh.packages."x86_64-linux".josh;
                     in {
-                        environment.systemPackages = [ josh-pkg ];
-                        environment.shells = [ josh-pkg ];
-                        users.defaultUserShell = josh-pkg;
+                        environment.systemPackages = [ joshPkg ];
+                        environment.shells = [ joshPkg ];
+                        users.defaultUserShell = joshPkg;
                     })
                     {
                         home-manager.useGlobalPkgs = true;
