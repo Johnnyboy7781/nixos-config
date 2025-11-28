@@ -9,7 +9,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         sops-nix.url = "github:Mic92/sops-nix";
-        jojo-sh.url = "github:Johnnyboy7781/josh";
+        josh.url = "github:Johnnyboy7781/josh";
     };
 
     outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, ... }: 

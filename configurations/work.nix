@@ -25,10 +25,10 @@ in
         git
         wget
         fd
-        jojo-sh
+        josh
     ];
 
-    environment.shells = with pkgs; [ zsh jojo-sh ];
+    environment.shells = with pkgs; [ zsh josh ];
     programs.zsh.enable = true;
 
     users.users.nixos = {
