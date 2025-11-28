@@ -27,14 +27,14 @@ in
         fd
     ];
 
-    environment.shells = with pkgs; [ zsh ];
-    programs.zsh.enable = true;
+    # environment.shells = with pkgs; [ zsh ];
+    # programs.zsh.enable = true;
 
     users.users.nixos = {
         isNormalUser = true;
         name = "nixos";
         home = "/home/nixos";
-        shell = pkgs.zsh;
+        # shell = pkgs.zsh;
     };
 
     security.pki.certificates = lib.mkIf (builtins.pathExists kmiCacertPath) [

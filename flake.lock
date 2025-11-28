@@ -61,14 +61,17 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 0,
-        "narHash": "sha256-ekZXrBaEb549R69Vy2bhpvPoAoHfPgV1lz1Tmf0TJ1k=",
-        "path": "/home/nixos/projects/personal/josh",
-        "type": "path"
+        "lastModified": 1764351550,
+        "narHash": "sha256-k/Hzkxsa+wiL5dVuu9C7SO0T/tH7VUmqjNe9sQrrXyo=",
+        "owner": "Johnnyboy7781",
+        "repo": "josh",
+        "rev": "2b23caea264a77745daf2b24572025fc6541a115",
+        "type": "github"
       },
       "original": {
-        "path": "/home/nixos/projects/personal/josh",
-        "type": "path"
+        "owner": "Johnnyboy7781",
+        "repo": "josh",
+        "type": "github"
       }
     },
     "nixos-wsl": {
