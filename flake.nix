@@ -28,6 +28,7 @@
                     in {
                         environment.systemPackages = [ josh-pkg ];
                         environment.shells = [ josh-pkg ];
+                        users.defaultUserShell = josh-pkg;
                     })
                     {
                         home-manager.useGlobalPkgs = true;
