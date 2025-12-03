@@ -34,7 +34,7 @@ in
         isNormalUser = true;
         name = "nixos";
         home = "/home/nixos";
-        shell = joshPkg;
+        shell = pkgs.zsh;
     };
 
     security.pki.certificates = lib.mkIf (builtins.pathExists kmiCacertPath) [
