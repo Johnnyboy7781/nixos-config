@@ -25,6 +25,7 @@
     home.file.".npmrc".text = lib.generators.toINIWithGlobalSection {} {
         globalSection = {
             prefix = "~/.npm";
+            ***REMOVED***
         };
     };
 
