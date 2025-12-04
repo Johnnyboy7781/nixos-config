@@ -26,8 +26,8 @@
         globalSection = {
             prefix = "~/.npm";
             registry = "https://nexus.itp.kinsale.cloud/repository/kinsale-npm-group/";
-            always-auth = "true";
             auth-type = "legacy";
+            "//nexus.itp.kinsale.cloud/repository/kinsale-npm-group/:_auth" = "\${NPM_PUBLISH_TOKEN}";
             "@kinsale:registry" = "https://nexus.itp.kinsale.cloud/repository/kinsale-npm-group/";
         };
     };
