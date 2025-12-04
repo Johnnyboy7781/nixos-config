@@ -3,7 +3,7 @@ vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', 'd/', ':noh')
 
 -- clipboard
-vim.keymap.set('v', '<C-C>', '"*y');
+vim.keymap.set({'n', 'v'}, '<leader>c', '"*y');
 
 -- project navigation
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
