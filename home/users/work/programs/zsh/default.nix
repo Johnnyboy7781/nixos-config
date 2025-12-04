@@ -16,6 +16,7 @@
       z = "zellij";
       ls = "eza";
       lg = "lazygit";
+      re = "sudo nixos-rebuild switch --impure";
     };
 
     oh-my-zsh = {
