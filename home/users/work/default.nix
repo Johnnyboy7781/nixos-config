@@ -26,8 +26,8 @@
         globalSection = {
             prefix = "~/.npm";
             ***REMOVED***
-            always-auth = "true";
             auth-type = "legacy";
+            ***REMOVED***
             ***REMOVED***
         };
     };
