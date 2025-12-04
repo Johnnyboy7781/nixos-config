@@ -25,6 +25,7 @@
     home.file.".npmrc".text = lib.generators.toINIWithGlobalSection {} {
         globalSection = {
             prefix = "~/.npm";
+            registry = "https://nexus.itp.kinsale.cloud/repository/kinsale-npm-group/";
         };
     };
 
