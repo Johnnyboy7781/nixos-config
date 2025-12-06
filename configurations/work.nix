@@ -7,6 +7,10 @@ in
 
     time.timeZone = "America/New_York";
 
+    virtualisation.docker = {
+        enable = true;
+    };
+
     wsl.enable = true;
     wsl.defaultUser = "nixos";
 
@@ -35,6 +39,7 @@ in
         name = "nixos";
         home = "/home/nixos";
         shell = pkgs.zsh;
+        extraGroups = [ "docker" ];
     };
 
     security.pki.certificates = lib.mkIf (builtins.pathExists kmiCacertPath) [
