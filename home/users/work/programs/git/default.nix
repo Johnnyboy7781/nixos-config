@@ -5,7 +5,7 @@
         userName = "Jonathan McDonnell";
         userEmail = "jonathan.mcdonnell@kinsaleins.com";
         ignores = [
-            "**/work/**/shells/"
+            "/shells/"
         ];
         extraConfig = {
             push = { autoSetupRemote = true; };
