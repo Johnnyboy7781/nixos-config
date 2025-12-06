@@ -15,7 +15,8 @@
       a = "git add .";
       z = "zellij";
       ls = "eza";
-      lg = "lazygit";
+      lzg = "lazygit";
+      lzd = "lazydocker";
       re = "sudo nixos-rebuild switch --impure";
     };
 
