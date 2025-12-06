@@ -66,6 +66,7 @@
         cargo
         gcc
         rust-analyzer
+        lazydocker
 
         # misc
         glow # markdown previewer
