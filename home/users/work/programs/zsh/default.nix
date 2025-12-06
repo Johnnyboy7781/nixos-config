@@ -22,7 +22,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "npm" "mvn" "ng" "node" ];
-      theme = "clean";
+      theme = "candy";
     };
 
     profileExtra = ''
