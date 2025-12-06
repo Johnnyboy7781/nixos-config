@@ -67,6 +67,8 @@
         gcc
         rust-analyzer
         lazydocker
+        awscli2
+        k9s
 
         # misc
         glow # markdown previewer
