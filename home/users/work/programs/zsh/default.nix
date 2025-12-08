@@ -5,6 +5,7 @@
     enableCompletion = true;
     initContent = ''
         export NPM_PUBLISH_TOKEN=$(cat ${config.sops.secrets.NPM_PUBLISH_TOKEN.path})
+        export AWS_REGION=us-east-1
         source ${./functions.zsh}
     '';
 
