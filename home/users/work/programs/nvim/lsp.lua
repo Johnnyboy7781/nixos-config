@@ -6,9 +6,23 @@ lspconfig.util.default_config.capabilities = vim.tbl_deep_extend(
     require('cmp_nvim_lsp').default_capabilities()
 )
 
-require 'lspconfig'.ts_ls.setup({})
-require 'lspconfig'.eslint.setup({})
-require 'lspconfig'.lua_ls.setup({
+vim.lsp.enable({
+    'nixd',
+    'ts_ls',
+    'eslint',
+    'angularls',
+    'cssls',
+    'emmet_ls',
+    'jsonls',
+    'html',
+    'bashls',
+    'yamlls',
+    'dockerls',
+    'rust_analyzer',
+    'lua_ls'
+})
+
+vim.lsp.config('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
@@ -17,16 +31,6 @@ require 'lspconfig'.lua_ls.setup({
         }
     }
 })
-require 'lspconfig'.angularls.setup({})
-require 'lspconfig'.cssls.setup({})
-require 'lspconfig'.emmet_ls.setup({})
-require 'lspconfig'.jsonls.setup({})
-require 'lspconfig'.html.setup({})
-require 'lspconfig'.bashls.setup({})
-require 'lspconfig'.yamlls.setup({})
-require 'lspconfig'.dockerls.setup({})
-require 'lspconfig'.nixd.setup({})
-require 'lspconfig'.rust_analyzer.setup({})
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
