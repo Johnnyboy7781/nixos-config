@@ -16,6 +16,10 @@ vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open(vim.api.nvim_buf_get_name(
 vim.keymap.set('n', '<leader>mp', ':MarkdownPreviewToggle<CR>')
 vim.keymap.set('n', '<leader>mt', ':Markview toggle<CR>')
 
+-- tab navigation
+vim.keymap.set('n', 't]', 'gt')
+vim.keymap.set('n', 't[', 'gT')
+
 -- wrap
 vim.keymap.set('n', 'j', 'gj', { noremap = true })
 vim.keymap.set('n', 'k', 'gk', { noremap = true })
