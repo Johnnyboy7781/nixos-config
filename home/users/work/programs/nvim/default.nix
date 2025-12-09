@@ -35,7 +35,7 @@
         {
             plugin = symbol-usage-nvim;
             type = "lua";
-            config = builtins.readFile ./plugins/test.lua;
+            config = builtins.readFile ./plugins/symbol-usage.lua;
         }
         {
             plugin = telescope-nvim;
