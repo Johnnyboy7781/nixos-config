@@ -18,7 +18,7 @@
         nodePackages.bash-language-server
         angular-language-server
         emmet-ls
-        dockerfile-language-server-nodejs
+        dockerfile-language-server
         yaml-language-server
         lua-language-server
         nil
