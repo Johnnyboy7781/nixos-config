@@ -33,11 +33,6 @@
         nvim-cmp
         cmp-nvim-lsp
         {
-            plugin = symbol-usage-nvim;
-            type = "lua";
-            config = builtins.readFile ./plugins/symbol-usage.lua;
-        }
-        {
             plugin = telescope-nvim;
             type = "lua";
             config = builtins.readFile ./plugins/telescope.lua;
