@@ -69,6 +69,7 @@
         lazydocker
         awscli2
         k9s
+        posting
 
         # misc
         glow # markdown previewer
