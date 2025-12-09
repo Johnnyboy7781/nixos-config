@@ -2,14 +2,14 @@
 {
     programs.git = {
         enable = true;
-        userName = "Jonathan McDonnell";
-        userEmail = "jonathan.mcdonnell@kinsaleins.com";
         ignores = [
             "/shells/"
         ];
-        extraConfig = {
+        settings = {
             push = { autoSetupRemote = true; };
             init.defaultBranch = "main";
+            user.name = "Jonathan McDonnell";
+            user.email = "jonathan.mcdonnell@kinsaleins.com";
         };
         hooks = {
             pre-commit = ./pre-commit;
