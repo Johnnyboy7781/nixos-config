@@ -1,11 +1,8 @@
 { pkgs, config, lib, ... }:
 {
     imports = [
-        ./programs/zsh
-        ./programs/nvim
+        ../shared-programs
         ./programs/git
-        ./programs/gh
-        ./programs/zellij
     ];
 
     home.username = "nixos";
@@ -33,46 +30,8 @@
     };
 
     home.packages = with pkgs; [
-        neofetch
-        nnn
-
-        # archives
-        zip
-        xz
-        unzip
-        p7zip
-
-        # utils
-        ripgrep
-        jq
-        yq-go
-        eza
-        fzf
-        nodejs
-        nodePackages."@angular/cli"
-        curl
-        jdt-language-server
-        jdk
-        maven
         aws-azure-login
-        kubectl
-        nodePackages.prettier
         ggshield
-        lazygit
-        age
-        sops
-        nix-zsh-completions
-        rustc
-        cargo
-        gcc
-        rust-analyzer
-        lazydocker
-        awscli2
-        k9s
-        posting
-
-        # misc
-        glow # markdown previewer
     ];
 
     home.stateVersion = "25.11";
