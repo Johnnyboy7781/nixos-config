@@ -13,6 +13,7 @@
     home.homeDirectory = "/home/jmcdonnell";
 
     home.packages = with pkgs; [
+        ripgrep
         neofetch
         kitty
         git
