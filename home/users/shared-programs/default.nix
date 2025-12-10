@@ -49,9 +49,6 @@
         awscli2
         neofetch
         nnn
-
-        # ggshield
-        # aws-azure-login
     ];
 
     home.stateVersion = "25.11";
