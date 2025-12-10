@@ -10,9 +10,11 @@
         };
         sops-nix.url = "github:Mic92/sops-nix";
         josh.url = "github:Johnnyboy7781/josh";
+        zen-browser.url = "github:0xc000022070/zen-browser-flake";
+        nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     };
 
-    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, josh, ... }: 
+    outputs = { nixpkgs, nixos-wsl, home-manager, sops-nix, josh, nixos-hardware, ... }@inputs: 
     {
         nixosConfigurations = {
             nixos = nixpkgs.lib.nixosSystem {
@@ -32,6 +34,21 @@
                         home-manager.sharedModules = [
                             sops-nix.homeManagerModules.sops
                         ];
+                    }
+                ];
+            };
+            jmcdonnell = nixpkgs.lib.nixosSystem {
+                system = "x86_64-linux";
+                specialArgs = { inherit inputs; };
+                modules = [
+                    ./configurations/home.nix
+                    home-manager.nixosModules.home-manager
+                    nixos-hardware.nixosModules.asus-zephyrus-ga503
+                    {
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPackages = true;
+                        home-manager.users.jmcdonnell = import ./home/users/jmcdonnell;
+                        home-manager.extraSpecialArgs = { inherit inputs; };
                     }
                 ];
             };
