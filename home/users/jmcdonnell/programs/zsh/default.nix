@@ -17,6 +17,7 @@
       lzg = "lazygit";
       lzd = "lazydocker";
       re = "sudo nixos-rebuild switch --impure";
+      rej = "sudo nixos-rebuild switch --flake ~/nixos-config#jmcdonnell";
     };
 
     oh-my-zsh = {
