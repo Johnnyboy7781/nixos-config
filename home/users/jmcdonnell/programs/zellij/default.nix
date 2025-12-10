@@ -3,6 +3,7 @@
     programs.zellij = {
         enable = true;
         enableZshIntegration = true;
+        exitShellOnExit = true;
         settings = {
             theme = "ao";
             show_startup_tips = false;
