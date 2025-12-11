@@ -5,6 +5,13 @@
         ./programs/git
     ];
 
+    programs.zsh = {
+        initContent = ''
+            export NPM_PUBLISH_TOKEN=$(cat ${config.sops.secrets.NPM_PUBLISH_TOKEN.path})
+            export AWS_REGION=us-east-1
+        '';
+    };
+
     home.username = "nixos";
     home.homeDirectory = "/home/nixos";
 
