@@ -10,7 +10,6 @@
         };
         sops-nix.url = "github:Mic92/sops-nix";
         josh.url = "github:Johnnyboy7781/josh";
-        zen-browser.url = "github:0xc000022070/zen-browser-flake";
         nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     };
 

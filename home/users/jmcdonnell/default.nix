@@ -1,9 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
     imports = [
         ../shared-programs
         ./programs/git
-        inputs.zen-browser.homeModules.beta
     ];
 
     home.username = "jmcdonnell";
@@ -12,8 +11,6 @@
     home.packages = with pkgs; [
         kitty
     ];
-
-    programs.zen-browser.enable = true;
 
     home.stateVersion = "25.11";
 }
