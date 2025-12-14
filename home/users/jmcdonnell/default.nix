@@ -10,6 +10,7 @@
 
     home.packages = with pkgs; [
         kitty
+        obsidian
     ];
 
     home.stateVersion = "25.11";
