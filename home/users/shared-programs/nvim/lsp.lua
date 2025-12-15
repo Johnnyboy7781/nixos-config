@@ -19,7 +19,8 @@ vim.lsp.enable({
     'yamlls',
     'dockerls',
     'rust_analyzer',
-    'lua_ls'
+    'lua_ls',
+    'jdtls'
 })
 
 vim.lsp.config('lua_ls', {

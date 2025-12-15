@@ -32,6 +32,7 @@
         plenary-nvim
         nvim-cmp
         cmp-nvim-lsp
+        nvim-jdtls
         {
             plugin = telescope-nvim;
             type = "lua";

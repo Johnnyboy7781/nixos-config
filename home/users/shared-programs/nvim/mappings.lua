@@ -29,10 +29,11 @@ vim.keymap.set('n', '$', 'g$', { noremap = true })
 -- lsp
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function()
-        vim.keymap.set('n', '<leader>ld', vim.lsp.buf.definition)
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+        vim.keymap.set('n', 'gi', vim.lsp.buf.declaration)
+        vim.keymap.set('n', 'gr', vim.lsp.buf.references)
         vim.keymap.set('n', 'K', vim.lsp.buf.hover)
         vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help)
-        vim.keymap.set('n', '<leader>lr', vim.lsp.buf.references)
         vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
         vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename)
         vim.keymap.set('n', '<leader>lo', vim.diagnostic.open_float)
